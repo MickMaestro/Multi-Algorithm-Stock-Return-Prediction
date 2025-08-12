@@ -1,12 +1,8 @@
 # Stock Return Prediction Using Machine Learning
 
----
-
 ## Overview
 
 This project implements and compares multiple machine learning models for predicting stock returns using historical price data and technical indicators. The analysis focuses on German DAX stocks including SAP, Siemens, Allianz, BASF, and BMW.
-
----
 
 ## Features
 
@@ -24,8 +20,6 @@ This project implements and compares multiple machine learning models for predic
   - Neural Network with early stopping
 - **Cross-Validation**: Time-series cross-validation for robust model evaluation
 - **Visualisation**: Comprehensive plotting of predictions, feature importance, and model comparisons
-
----
 
 ## Requirements
 
@@ -46,8 +40,6 @@ keras
 - Python 3.7 or higher
 - TensorFlow 2.x compatible environment
 
----
-
 ## Installation
 
 1. Clone or download the project files
@@ -55,8 +47,6 @@ keras
 ```bash
 pip install pandas numpy matplotlib seaborn tensorflow yfinance scikit-learn
 ```
-
----
 
 ## Usage
 
@@ -89,8 +79,6 @@ selected_stocks = [
 ]
 ```
 
----
-
 ## Methodology
 
 ### Data Processing
@@ -115,8 +103,6 @@ Each model undergoes:
 - **Mean Absolute Error (MAE)**
 - **R-squared (R²)**
 
----
-
 ## Output Files
 
 The programme generates several visualisation files:
@@ -134,7 +120,6 @@ The programme generates several visualisation files:
 - `model_comparison_mae.png` - MAE comparison across all models and stocks
 - `model_comparison_r2.png` - R² comparison across all models and stocks
 
----
 
 ## Key Functions
 
@@ -155,8 +140,6 @@ The programme generates several visualisation files:
 - `perform_cross_validation()` - Time-series cross-validation
 - `compare_model_performance()` - Cross-model performance comparison
 - `plot_predictions()` - Prediction visualisation
-
----
 
 ## Model Details
 
@@ -181,8 +164,6 @@ The programme generates several visualisation files:
 - Adam optimiser with early stopping
 - Prediction clipping to prevent extreme values
 
----
-
 ## Technical Indicators
 
 The system calculates numerous technical indicators:
@@ -194,8 +175,6 @@ The system calculates numerous technical indicators:
 - **Price Action**: High-low differentials, daily ranges
 - **Market Indicators**: Market return correlations
 
----
-
 ## Error Handling
 
 The implementation includes comprehensive error handling:
@@ -205,8 +184,6 @@ The implementation includes comprehensive error handling:
 - Prediction clipping for extreme values
 - Graceful degradation for failed stocks
 
----
-
 ## Performance Considerations
 
 - **Memory Usage**: Processes stocks sequentially to manage memory
@@ -214,16 +191,12 @@ The implementation includes comprehensive error handling:
 - **Data Quality**: Automatic handling of missing and zero values
 - **Numerical Stability**: Clipping and replacement of extreme values
 
----
-
 ## Limitations
 
 - **Data Dependency**: Relies on Yahoo Finance API availability
 - **Prediction Horizon**: Currently configured for next-day predictions only
 - **Market Conditions**: Performance may vary significantly across different market regimes
 - **Feature Engineering**: Manual feature selection may not capture all relevant patterns
-
----
 
 ## Future Enhancements
 
@@ -236,11 +209,4 @@ Potential improvements include:
 - Real-time prediction capabilities
 
 ---
-
-## Author
-Ibukunoluwa Michael Adebanjo
----
-
-## Licence
-
-This project is created for academic purposes as part of coursework requirements.
+Author: Ibukunoluwa Michael Adebanjo
